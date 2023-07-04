@@ -1,0 +1,103 @@
+header: "&8&l[&eBlockmania&8&l]&7"
+error_header: "&8&l[&eBlockmania&8&l] &cERREUR:"
+
+game:
+  victory: "&a&m                                         \n\n%header% Bravo à &9%s% &7 pour sa victoire !!!\n\n&a&m                                         "
+  victory_plural: "&a&m                                         \n\n%header% Bravo à &9%s% &7 pour leur victoire !!!\n\n&a&m                                         "
+  pvp_on: "%header% Le PVP est activé pour la partie."
+  keep_inventory_on: "%header% Le KeepInventory est activé pour la partie."
+  teleporting: "%header% Les joueurs vont être téléportés."
+  teleporting_player: "%header% Téléportation du joueur &9%s%&7/&9%s2%"
+  teleporting_team: "%header% Téléportation de la team &9%s%&7/&9%s2%"
+  completed_block: "%header% Vous avez terminé votre bloc."
+
+warning:
+  error:
+    add_team: "%error_header% Une erreur a eu lieu lors de votre ajout dans cette team."
+  ffa: "%header% &cVous ne pouvez pas faire ça en mode FFA."
+  left: "%header% &cLe joueur %s s'est déconnecté, il peut se reconnecter quand il le souhaite."
+  permission: "%header% &cVous n'avez pas la permission."
+  game_is_on: "%header% &cVous ne pouvez pas faire ça alors que la partie est lancée."
+  game_is_off: "%header% &cVous ne pouvez pas faire ça alors que la partie n'est pas lancée."
+  not_enough_player: "%header% &cIl n'y a pas assez de joueur pour faire ça."
+  consol: "%header% &cCette commande ne peut pas être exécutée depuis la console."
+
+command:
+  stop: "%header% Un joueur a arrêté la partie."
+  reload: "%header% La config a été rechargée."
+  help:
+    title: "&7>> &e&l/blockmania &b... "
+    aliases: "&eAliases: /bm"
+    start: "&b... &lstart &7: Démarre la partie"
+    stop: "&b... &lstop &7: Arête la partie"
+    config: "&b... &lconfig &7: Ouvre le panneau de configuration"
+    reload: "&b... &lreload &7: Recharge la config et la langue"
+    team: "&b... &lteam &7: Ouvre le menu de sélection des teams"
+    help: "&b... &lhelp &7: Envoie ce message"
+
+scoreboard:
+  time: "&aTemps: &c%s%"
+  points: "&aPoints: &c%s%"
+  round: "&aRound: &c%s%"
+  objectives: "&9│ &6Objectif"
+  objective_time: "§o   » §e%s% minutes"
+  objective_rounds: "§o   » §e%s% rounds"
+  objective_points: "§o   » §e%s% points"
+  block_title: "&9│ &6Bloc"
+  block: "§o   » §e%s%"
+  next_round_title: "§9│ §6Prochain Round"
+  next_round: "§o   » §e%s%"
+
+gui:
+  enable: "&aactivé"
+  disable: "&cdésactivé"
+  next: "&ePage suivante"
+  previous: "&ePage précédante"
+  main:
+    game_type:
+      title: "&eCondition de victoire"
+      time: "&f&l>> Temps: &7Meilleur score en %s%m \n&8&l>> &r&8Points: &7Premier à %s2% points. \n&8&l>> &r&8Round: &7Meilleur score en %s3% round\n\n&cClique GAUCHE&7: Changer le type\n&aClique DROIT&7: Changer la valeur"
+      points: "&8&l>> &r&8Temps: &7Meilleur score en %s%m \n&f&l>> Points: &7Premier à %s2% points. \n&8&l>> &r&8Round: &7Meilleur score en %s3% round\n\n&cClique GAUCHE&7: Changer le type\n&aClique DROIT&7: Changer la valeur"
+      rounds: "&8&l>> &r&8Temps: &7Meilleur score en %s%m \n&8&l>> &r&8Points: &7Premier à %s2% points. \n&f&l>> Round: &7Meilleur score en %s3% round\n\n&cClique GAUCHE&7: Changer le type\n&aClique DROIT&7: Changer la valeur"
+    round_type:
+      title: "&eType de round"
+      no_round: "&f&lPas de rounds \n&7Dés que un joueur complète\n&7son bloc, il reçoit immédiatement\n&7le prochain bloc."
+      normal: "&f&lNormal \n&7Si tous les joueurs complètent leurs\n&7blocs, alors les joueurs passent au\n&7prochain round, sinon ils passent \n&7au prochain round à la fin du round."
+      full_round: "&f&lRound complét \n&7Les joueurs passent au prochain\n&7round que lorsque le round se \n&7termine."
+      cycle: "&f&lCycle\n&7Comme les rounds en mode \"normal\" \n&7sauf que si un joueur ne complète\n&7pas son bloc il reçoit un\n&7bloc du même palier."
+    round_time:
+      title: "&eTemps d'un round"
+      lore: "&7Chaque round dure &a%s% &7minutes."
+    teams_size_name: "&eTaille des teams"
+    teams_ffa_lore: "&7Vous êtes en &bFFA"
+    teams_size_lore: "&7Vous êtes en &b%s% vs %s%"
+    only_one_block:
+      title: "&eUn bloc pour tous"
+      lore: "&7Donne le même bloc pour chaque \n&7palier à tout le monde \n&7Status: %enable%"
+    pvp:
+      title: "&ePvp"
+      lore: "&7Le pvp est %enable%&7."
+    food:
+      title: "&eNourriture de départ"
+      lore: "&7La nourriture de départ \n&7est %enable%e&7."
+    keep_inventory:
+      title: "&eKeepInventory"
+      lore: "&7Le KeepInventory est %enable%&7."
+  title:
+    advanced_menu: "&8&lParamètres avancés"
+    apples_rate_menu: "&8&lDrop des pommes"
+    border_end_menu: "&8&lBordure de fin"
+    border_speed_menu: "&8&lVitesse de la bordure"
+    border_start_menu: "&8&lBordure de départ"
+    border_time_menu: "&8&lTemps Bordure"
+    death_items_menu: "&8&lItems de morts"
+    diamond_limit_menu: "&8&lLimite de diamant"
+    events_menu: "&8&lEvents"
+    flints_rate_menu: "&8&lDrop des silex"
+    main_menu: "&8&lConfig"
+    pvp_menu: "&8&lTemps PVP"
+    respawn_menu: "&8&lRespawn"
+    spectator_inventory_menu: "&8&lItems du joueur"
+    start_items_menu: "&8&lItems de départs"
+    teams_menu: "&8&lLes équipes"
+    time_events: "&8&lTemps entre deux events"

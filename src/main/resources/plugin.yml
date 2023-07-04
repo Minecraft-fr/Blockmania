@@ -1,0 +1,11 @@
+main: fr.uiytt.blockmania.Blockmania
+name: Blockmania
+version: ${version}
+author: uiytt, minecraftfr
+description: Run around trying to find blocs
+api-version: 1.16
+commands:
+  blockmania:
+    aliases: bm
+    description: Commands of the plugin blockmania
+    usage: /blockmania <start|stop|reload|team|config>

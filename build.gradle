@@ -1,0 +1,41 @@
+plugins {
+    id 'java'
+    id 'com.github.johnrengelman.shadow' version '7.1.2'
+}
+
+group 'fr.uiytt'
+version '1.2.1'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    maven { url = 'https://oss.sonatype.org/content/repositories/snapshots' }
+    maven { url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/' }
+    maven { url "https://jitpack.io" }
+}
+
+dependencies {
+    compileOnly 'org.spigotmc:spigot-api:1.16.5-R0.1-SNAPSHOT'
+    implementation 'com.github.simplix-softworks:simplixstorage:3.2.1'
+    implementation 'fr.minuskube.inv:smart-invs:1.2.7'
+}
+
+shadowJar {
+    dependencies {
+        include(dependency('fr.minuskube.inv:smart-invs:1.2.7'))
+        include(dependency('com.github.simplix-softworks:simplixstorage:3.2.1'))
+    }
+}
+
+processResources {
+    inputs.property "version", project.version
+
+    filesMatching("plugin.yml") {
+        expand "version": project.version
+    }
+}
+
+
+test {
+    useJUnitPlatform()
+}

@@ -1,0 +1,90 @@
+header: "&8&l[&eBlockmania&8&l]&7"
+error_header: "&8&l[&eBlockmania&8&l]&7 &cERROR:"
+
+game:
+  victory: "&a&m                                         \n\n%header% Congratulations to &9%s% &7 for his victory !!!\n\n&a&m                                         "
+  victory_plural: "&a&m                                         \n\n%header% Congratulations to &9%s% &7 for their victory !!!\n\n&a&m                                         "
+  pvp_on: "%header% The PVP is enabled for this game."
+  keep_inventory_on: "%header% Le KeepInventory is ON for the game."
+  teleporting: "%header% The players will be teleported."
+  teleporting_player: "%header% Teleporting player &9%s%&7/&9%s2%"
+  teleporting_team: "%header% Teleporting team &9%s%&7/&9%s2%"
+  completed_block: "%header% You finished your block."
+
+warning:
+  error:
+    add_team: "%error_header% There was an error while trying to add you to this team."
+  ffa: "%header% &cYou can not do that in ffa."
+  left: "%header% &cThe player %s% left the game, he can join back at any moment."
+  permission: "%header% &cYou don't have the permissions to do that."
+  game_is_on: "%header% &cYou cannot do that while the game is started."
+  game_is_off: "%header% &cYou cannot do that while the game has not yet started."
+  not_enough_player: "%header% &cThere is not enough players for that."
+  consol: "%header% &cThis command can not be executed from the consol."
+
+command:
+  stop: "%header% A player stopped the game."
+  reload: "%header% The config was reloaded."
+  help:
+    title: "&7>> &e&l/blockmania &b... "
+    aliases: "&eAliases: /bm"
+    start: "&b... &lstart &7: Start the game"
+    stop: "&b... &lstop &7: Stop the game"
+    config: "&b... &lconfig &7: Open the GUI for the config"
+    reload: "&b... &lreload &7: Reload the config and the language"
+    team: "&b... &lteam &7: Open the team selection menu"
+    help: "&b... &lhelp &7: Send this message"
+
+gui:
+  enable: "&aenable"
+  disable: "&cdisable"
+  next: "&eNext page"
+  previous: "&ePrevious page"
+  main:
+    game_type:
+      title: "&eTerms of victory"
+      time: "&f&l>> Temps: &7Best score with %s%m \n&8&l>> &r&8Points: &7First with %s2% points. \n&8&l>> &r&8Round: &7Best score with %s3% round\n\n&cLEFT click&7: Change the type\n&aClique RIGHT&7: Change the value"
+      points: "&8&l>> &r&8Time: &7Best score with %s%m \n&f&l>> Points: &7First with %s2% points. \n&8&l>> &r&8Round: &7Best score with %s3% round\n\n&cLEFT click&7: Changer the type\n&aClique RIGHT&7: Change the value"
+      rounds: "&8&l>> &r&8Temps: &7Best score with %s%m \n&8&l>> &r&8Points: &7First with %s2% points. \n&f&l>> Round: &7Best score with %s3% round\n\n&cLEFT click&7: Changer the type\n&aClique RIGHT&7: Change the value"
+    round_type:
+      title: "&eType of round"
+      no_round: "&f&lNo round \n&7As soon as the player obtain\n&7his block, He instantly get the next one\n&7"
+      normal: "&f&lNormal \n&7All players needs to obtains their\n&7blocks, in order to pass to\n&7the next round,\n&7otherwise they only pass after the end of afermentioned round"
+      full_round: "&f&lRound complete \n&7All players goes onto \n&7the next round as soon as it \n&7 finish."
+      cycle: "&f&lCycle\n&7Like round in \"normal\" mode \n&7 at the soleexception that if the player doesn't succede in finding is Block\n&7he gets a new one \n&7 of the same level."
+    ound_time:
+      title: "&eDuration of a single round"
+      lore: "&7Each round is &a%s% &7minutes."
+    teams_size_name: "&eTeam size"
+    teams_ffa_lore: "&7You'r part of &bFFA"
+    teams_size_lore: "&7You'r part of &b%s% Vs %s%"
+    only_one_block:
+      title: "&eOne For All"
+      lore: "&7Give the same block for each \n&7 round to everyone \n&7Status: %enable%"
+    pvp:
+      title: "&ePvp"
+      lore: "&7PVP is %enable%&7."
+    food:
+      title: "&eStarting food"
+      lore: "&7Starting food \n&7 is %enable%e&7."
+    keep_inventory:
+      title: "&eKeepInventory"
+      lore: "&7 KeepInventory gamerule is %enable%&7."
+  title:
+    advanced_menu: "&8&lAdvenced Settings"
+    apples_rate_menu: "&8&lApple drop rate"
+    border_end_menu: "&8&lWorld border"
+    border_speed_menu: "&8&lBorder speed"
+    border_start_menu: "&8&lStarting Border"
+    border_time_menu: "&8&lBorder time"
+    death_items_menu: "&8&lItems de morts"
+    diamond_limit_menu: "&8&lDiamond limit"
+    events_menu: "&8&lEvents"
+    flints_rate_menu: "&8&lFlint drop rate"
+    main_menu: "&8&lSettings"
+    pvp_menu: "&8&lTime PVP"
+    respawn_menu: "&8&lRespawn"
+    spectator_inventory_menu: "&8&lPlayers items"
+    start_items_menu: "&8&lStarting items"
+    teams_menu: "&8&lTEAMS"
+    time_events: "&8&lTime between two differents events"
